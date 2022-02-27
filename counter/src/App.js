@@ -44,25 +44,29 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <button className="decrement" onClick={decrement}>
-          - decrement
+          <span>-</span> decrement
         </button>
         <p> Counter : {counter}</p>
         <button className="increment" disable onClick={increment}>
-          + increment
+          <span>+</span> increment
         </button>
       </div>
-
-      {loading ? (
-        <div> Loading... </div>
-      ) : (
-        <p>
-          {' '}
-          <span>Full Name: {fetchData.full_name}</span>
-          <br /> <span>Description: {fetchData.description}</span>
-          <br /> <span>Amount of stars: {fetchData.stargazers_count}</span>
-          <br />
-        </p>
-      )}
+      <div className="desc">
+        {loading ? (
+          <div> Loading repostories... </div>
+        ) : (
+          <p>
+            {' '}
+            <span className="title">Full Name: </span>
+            <span>{fetchData.full_name}</span>
+            <br /> <span className="title">Description: </span>
+            <span>{fetchData.description}</span>
+            <br /> <span className="title">Amount of stars: </span>
+            <span>{fetchData.stargazers_count}</span>
+            <br />
+          </p>
+        )}
+      </div>
     </div>
   );
 }
