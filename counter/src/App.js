@@ -59,11 +59,12 @@ function App() {
             {' '}
             <span className="title">Full Name: </span>
             <span>{fetchData.full_name}</span>
-            <br /> <span className="title">Description: </span>
-            <span>{fetchData.description}</span>
-            <br /> <span className="title">Amount of stars: </span>
-            <span>{fetchData.stargazers_count}</span>
             <br />
+            <span className="title">Description: </span>
+            <span>{fetchData.description}</span>
+            <br />
+            <span className="title">Amount of stars: </span>
+            <span>{fetchData.stargazers_count}</span>
           </p>
         )}
       </div>
