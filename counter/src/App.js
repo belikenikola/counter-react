@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './App.css';
-import plus from './assets/plus.svg';
-import minus from './assets/minus.svg';
 
 function App() {
   const [counter, setCounter] = useState(0);
